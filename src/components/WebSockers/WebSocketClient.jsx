@@ -12,7 +12,7 @@ const WebSocketClient = ({Protocol, Address, Port, children}) => {
     function openSocket() {
         let ws_address = protocol + "://" + address + ":" + port;
         console.log(ws_address)
-        setSocket(ws_address);
+        setSocket(webSocket(ws_address));
     }
 
     useEffect(

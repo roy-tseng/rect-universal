@@ -4,9 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Entry from "./components/Entry/Entry"
+import {createStore} from 'redux'
+import {Provider} from 'react-redux'
+import HandlerDoc from './store/handlers/handler.doc'
+
+const store = createStore(HandlerDoc);
 
 ReactDOM.render(
   <React.StrictMode>
+
     <Entry />
   </React.StrictMode>,
   document.getElementById('root')
