@@ -1,0 +1,9 @@
+export const CounterActions = {
+    Add : "counter/+",
+    Sub : "counter/-"
+}
+
+export const PersonalInfoActions = {
+    GetName : "pinfo/name",
+    GetTEL : "pinfo/tel"
+}

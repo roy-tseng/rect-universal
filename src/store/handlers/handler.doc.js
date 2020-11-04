@@ -1,8 +1,12 @@
 import CounterHandler from "../handlers/handler.counter"
+import { combineReducers } from 'redux'
 
-
-const HandlerDoc = {
-    CounterHandler : CounterHandler
+const Reducers = {
+    Counter : CounterHandler,
 }
+
+const HandlerDoc = combineReducers(
+    Reducers
+)
 
 export default HandlerDoc;

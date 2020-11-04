@@ -8,9 +8,7 @@ const Entry = (props) => {
 
     return (
         <>
-            <WebSocketClient Protocol="https" Address="localhost" Port="4501">
-                <Counter/>
-            </WebSocketClient>
+          <Counter/>
         </>
     );
 }

@@ -1,16 +1,14 @@
+import {CounterActions} from "../actionDef/actionDef"
 import Counter from "../states/state.counter"
 
 const CounterHandler = (state=Counter, action) => {
 
-    state = Counter;
-
     switch(action.type) {
-
-        case "+":
-            state = {...state, value : action.payload.value + 1};
+        case CounterActions.Add:           
+            state = {...state, value : action.payload + 1};
             break;
-        case "-":
-            state = {...state, value : action.payload.value - 1};
+        case CounterActions.Sub:
+            state = {...state, value : action.payload - 1};
             break;        
         default:
             state = Counter;
@@ -18,7 +16,6 @@ const CounterHandler = (state=Counter, action) => {
     }
 
     return state;
-
 }
 
 export default CounterHandler;
