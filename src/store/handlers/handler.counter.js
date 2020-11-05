@@ -11,7 +11,9 @@ const CounterHandler = (state=Counter, action) => {
             state = {...state, value : action.payload - 1};
             break;        
         default:
-            state = Counter;
+             // this line will be invoked as other reducer executing, so we have to mark this line  to avoid 
+             // side effect
+            //state = Counter;
             break;
     }
 
