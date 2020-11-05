@@ -8,6 +8,7 @@ const Entry = (props) => {
 
     return (
         <>
+          <Counter/><br/>
           <Counter/>
         </>
     );

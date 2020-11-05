@@ -1,4 +1,4 @@
-const UI_TITLE_TW = {
+const UI_LANG_TW = {
     Component_Broadcast : {
         TITLE_SEND_BUTTON : "發送",
         TITLE_CLOSE_BUTTON : "關閉"
@@ -16,4 +16,4 @@ const UI_TITLE_TW = {
     }
 }
 
-export default UI_TITLE_TW;
+export default UI_LANG_TW;

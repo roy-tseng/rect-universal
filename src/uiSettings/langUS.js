@@ -1,4 +1,4 @@
-const UI_TITLE_US = {
+const UI_LANG_US = {
     Component_Broadcast : {
         TITLE_SEND_BUTTON : "Send",
         TITLE_CLOSE_BUTTON : "Close"
@@ -12,4 +12,4 @@ const UI_TITLE_US = {
     }
 }
 
-export default UI_TITLE_US;
+export default UI_LANG_US;

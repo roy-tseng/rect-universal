@@ -1,7 +1,6 @@
 import {ChangeLanguagePackActions} from "../actionDef/actionDef"
 
-
-export const ChangeLanguagePackActionsMaker = {
+const ChangeLanguagePackActionsMaker = {
 
     TW : function (data) {
         return {type : ChangeLanguagePackActions.TW, payload: data};
@@ -11,3 +10,5 @@ export const ChangeLanguagePackActionsMaker = {
         return {type : ChangeLanguagePackActions.US, payload: data};
     }
 }
+
+export default ChangeLanguagePackActionsMaker

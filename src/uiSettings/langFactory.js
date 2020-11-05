@@ -1,5 +1,5 @@
-import UI_TITLE_TW from "./langTW"
-import UI_TITLE_US from "./langUS"
+import UI_LANG_TW from "./langTW"
+import UI_LANG_US from "./langUS"
 
 export const SupportedLang = {
     US : 'us',
@@ -13,13 +13,13 @@ const langFactory = (GlobalLang='tw') => {
 
     switch(GlobalLang){
         case SupportedLang.TW : 
-            langPack = UI_TITLE_TW;
+            langPack = UI_LANG_TW;
             break;
         case SupportedLang.US:
-            langPack = UI_TITLE_US;
+            langPack = UI_LANG_US;
             break;
         default:
-            langPack = UI_TITLE_TW;
+            langPack = UI_LANG_TW;
             break;
     }
 
