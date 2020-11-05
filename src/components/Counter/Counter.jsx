@@ -2,6 +2,7 @@ import {useState} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import langFactory, {SupportedLang} from '../../uiSettings/langFactory'
 import CounterActionGenerator from "../../store/actions/action.counter"
+import { Button } from '@material-ui/core';
 
 const Counter = () => {
 
@@ -22,9 +23,10 @@ const Counter = () => {
 
     return (
             <>
-                <button onClick={() => changeLang()}>{langPack.General.TITLE_CHANGE_LANG}</button>
-                <span>Counter: {counter} </span>
-                <button onClick={() => dispatch(CounterActionGenerator.Add(counter))}>{langPack.Component_Counter.TITLE_Add_BUTTON}</button>         
+                <Button variant = "contained" color="secondary" onClick={() => changeLang()}>{langPack.General.TITLE_CHANGE_LANG}</Button><br/>
+                <span>Counter: {counter} </span><br/>
+                <Button variant="contained" color="primary" onClick={() => dispatch(CounterActionGenerator.Add(counter))}>{langPack.Component_Counter.TITLE_Add_BUTTON}</Button>         
+                <Button variant="contained" color="primary" onClick={() => dispatch(CounterActionGenerator.Sub(counter))}>{langPack.Component_Counter.TITLE_Sub_BUTTON}</Button>         
             </>
         )
 }

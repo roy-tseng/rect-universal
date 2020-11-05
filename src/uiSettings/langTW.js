@@ -7,6 +7,10 @@ const UI_TITLE_TW = {
         TITLE_Add_BUTTON : "加1",
         TITLE_Sub_BUTTON : "減1"
     },
+    Component_CountDown : {
+        TITLE_START_BUTTON: "啟動",
+        TITLE_SETUP_BUTTON: "設定",
+    },
     General:{
         TITLE_CHANGE_LANG:"改變語系"
     }

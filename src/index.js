@@ -6,8 +6,9 @@ import Entry from "./components/Entry/Entry"
 import {createStore} from 'redux'
 import {Provider} from 'react-redux'
 import HandlerDoc from './store/handlers/handler.doc'
+import { devToolsEnhancer } from 'redux-devtools-extension';
 
-const store = createStore(HandlerDoc);
+const store = createStore(HandlerDoc, devToolsEnhancer());
 
 ReactDOM.render(
   <React.StrictMode>
