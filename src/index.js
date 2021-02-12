@@ -7,13 +7,14 @@ import {createStore} from 'redux'
 import {Provider} from 'react-redux'
 import HandlerDoc from './store/handlers/handler.doc'
 import { devToolsEnhancer } from 'redux-devtools-extension';
+import {LineEx} from 'yuhuajs-messageboxer'
 
 const store = createStore(HandlerDoc, devToolsEnhancer());
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store = {store}>
-      <Entry />
+      <LineEx.LineEmitter />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

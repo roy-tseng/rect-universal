@@ -13,7 +13,7 @@ const CounterHandler = (state=Counter, action) => {
         default:
              // this line will be invoked as other reducer executing, so we have to mark this line  to avoid 
              // side effect
-            //state = Counter;
+            // state = Counter;
             break;
     }
 

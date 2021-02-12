@@ -2,8 +2,8 @@ import UI_LANG_TW from "./langTW"
 import UI_LANG_US from "./langUS"
 
 export const SupportedLang = {
-    US : 'us',
-    TW : 'tw'
+    US : 'English',
+    TW : '繁體中文'
 }
 
 
